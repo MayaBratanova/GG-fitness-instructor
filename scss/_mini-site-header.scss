@@ -1,0 +1,120 @@
+.mini-site-header {
+  width: 100vw; 
+  background-color: #343336;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23040404' fill-opacity='0.16'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");   
+}
+body > header:first-of-type {
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mini-site-header .site-title { 
+  font-size: 4rem;
+  color: rgb(89, 214, 5);
+  padding: 0 2rem;
+  transition: all 0.3s linear;
+   display: inline-block;
+}
+header:hover .site-title{	
+	transform: rotate(360deg);	
+}
+.mini-site-header .site-text-logo{
+	font-size: 2.5em;
+	padding-right: 0.2rem;
+}
+.mini-site-header .site-text{
+	display: flex;
+	align-items: center;
+	text-align: left;	
+	text-shadow: 4px 4px 0px rgba(#000, 0.8);
+	border-radius: 5px;
+	color: rgb(89, 214, 5);
+	font-weight: 500;
+	font-size: 1.5em;	
+	padding: 11rem 3rem 0.5rem 3rem;		
+	float: right;
+	
+	p{
+		padding-bottom: 0;
+	}
+	p:nth-child(2){
+		font-size: 0.7em;
+		font-style: italic;		
+	}
+	
+}
+.mini-site-header:after{
+	display: block;
+	content: '';
+	height: 0;
+	clear: both;
+}
+.mini-contacts.first-bar {
+    padding: 0;
+    margin: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    /*background: linear-gradient(to right, #d4d5d6, #a8aaab, #7f8182, #575a5b, #333636);*/
+    padding: 0.5rem 8rem 0.1rem 0;
+    li {
+      display: block;
+      list-style: outside none;
+      &:hover{
+        animation: shake 0.5s ease-in-out;
+      }
+      a{
+        text-decoration: none;
+        color: rgb(255,255,255);
+        margin: 0.5rem;
+        font-weight: 500;
+        
+      }
+    }
+  }
+}
+
+
+/*body {
+	
+	
+}
+
+.site-header {
+}
+
+.site-branding {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%); 
+	padding: var(--spacing-site);
+	padding-bottom: 4rem;
+}
+
+.site-title {
+	font-size: 1.8em;
+	/*font-weight: bold;*/
+/*text-transform: uppercase;*/
+/*	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 2px solid #DDD;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.site-description {
+	font-style: italic;
+	font-family: serif;
+	font-size: 110%;
+}*/
