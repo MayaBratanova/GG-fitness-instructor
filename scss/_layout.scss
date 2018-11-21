@@ -23,7 +23,7 @@ body {
   }
   a{
 	  font-weight: bold;
-	  color: white;
+	  color: rgb(89, 214, 5);
   }
 
   h2 {
@@ -45,7 +45,14 @@ body.промяната-на-мая-бояджиева .site-content,
 body.здравословни-десерти .site-content{
 	padding: 0 5rem 0 5rem;
 }
-
+body.home .mini-site{
+	display: none;
+}
+body.как-да-отслабна .mini-site,
+body.промяната-на-мая-бояджиева .mini-site,
+body.здравословни-десерти .mini-site{
+  display: none;
+}
 /*body p:first-child {
 }
 

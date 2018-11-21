@@ -27,15 +27,15 @@
                 <nav class="main">
                     <ul>
                         <li><a href="{{ site.baseurl }}/">Начало</a></li>
-                        <li><a href="{{ site.baseurl }}/about/">Програма за теб</a>
+                        <li><a href="{{ site.baseurl }}/services/">Услуги</a>
                             <ul>
-                                <li><a href="{{ site.baseurl }}/about/">Тренировъчен режим</a>
-                                <li><a href="{{ site.baseurl }}/about/">Хранителен режим</a>
+                                <li><a href="{{ site.baseurl }}/trainingProgram/">Тренировъчна програма</a>
+                                <li><a href="{{ site.baseurl }}/foodProgram/">Хранителен режим</a>
                             </ul>
                         </li>
                         <li><a href="{{ site.baseurl }}/clients/">Доволни клиенти</a></li>
                         <li><a href="{{ site.baseurl }}/articles/">Статии</a></li>
-                        <li><a href="{{ site.baseurl }}/recepts/">Рацепти</a></li>
+                        <li><a href="{{ site.baseurl }}/recepts/">Рецепти</a></li>
                         <li><a href="{{ site.baseurl }}/forMe/">За мен</a></li>
                         <li><a href="{{ site.baseurl }}/contacts/">Контакти</a></li>
                     </ul>
@@ -51,7 +51,7 @@
         </div>
 
         <main class="site-content">
-			
+                {% include header.html%}
 				{{content}}
 			
 			</main>
