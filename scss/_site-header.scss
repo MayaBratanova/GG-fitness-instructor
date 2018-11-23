@@ -1,8 +1,26 @@
 .site-header {
-  width: 100vw; 
-  background: linear-gradient(rgba(#000,0.2), rgba(#575a5b,0.2)), url('../img/genadi_logo_crop2.jpg') no-repeat center ;
-  background-size: cover;
-  
+  width: 100vw;
+  background: linear-gradient(rgba(#000, 0.2), rgba(#575a5b, 0.2)),
+    url("../img/genadi_logo_crop2.jpg") no-repeat center;
+  background-size: cover; 
+  a{
+    text-align: center;
+  }
+}
+.site-header-logo {
+  display: flex;
+  font-size: 2em;
+  color: rgb(89, 214, 5);
+  align-items: center;
+  p {
+    padding: 0;
+  }
+  .site-title {
+    font-size: 2em;
+    padding: 0 2rem;
+    transition: all 0.3s linear;
+    display: inline-block;
+  }
 }
 /*header{
 	display: flex;
@@ -17,49 +35,77 @@ body > header:first-of-type {
   flex-wrap: wrap;
 }
 
-.site-title { 
-  font-size: 4rem;
+header:hover .site-title {
+  transform: rotate(360deg);
+}
+.site-text-logo {
+  font-size: 2.5em;
+  padding-right: 0.2rem;
   color: rgb(89, 214, 5);
-  padding: 0 2rem;
-  transition: all 0.3s linear;
-   display: inline-block;
 }
-header:hover .site-title{	
-	transform: rotate(360deg);	
+.site-text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-shadow: 4px 4px 0px rgba(#000, 0.8);
+  border-radius: 5px;
+  color: rgb(89, 214, 5);
+  font-weight: 500;
+  font-size: 2.5em;
+  padding: 14rem 3rem 2rem 3rem;
+  float: right;
+
+  p {
+    padding-bottom: 0;
+  }
+  p:nth-child(2) {
+    font-size: 0.7em;
+    font-style: italic;
+  }
+  span {
+    color: rgb(204, 204, 204);
+  }
 }
-.site-text-logo{
-	font-size: 2.5em;
-	padding-right: 0.2rem;
-}
-.site-text{
-	display: flex;
-	align-items: center;
-	text-align: left;	
-	text-shadow: 4px 4px 0px rgba(#000, 0.8);
-	border-radius: 5px;
-	color: rgb(89, 214, 5);
-	font-weight: 500;
-	font-size: 1.5em;	
-	padding: 11rem 3rem 0.5rem 3rem;		
-	float: right;
-	
-	p{
-		padding-bottom: 0;
-	}
-	p:nth-child(2){
-		font-size: 0.7em;
-		font-style: italic;		
-	}
-	
-}
-.site-header:after{
-	display: block;
-	content: '';
-	height: 0;
-	clear: both;
+.site-header:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
 }
 
 
+.section-second {
+  display: flex;
+  align-items: center;  
+  font-family: "PT sans", sans-serif;
+  font-size: 1em;
+  background: #59D605;
+  i{
+	  color: #59D605;
+  }
+  p {
+    font-family: PT sans-serif;		
+	padding-bottom: 0.5rem;
+  }
+  h3{
+	  padding-bottom: 0.5rem;
+	  font-style: italic;
+  }
+  
+  .first-bar {	
+		
+	padding: 1.5rem 4rem 1.5rem 4rem;
+	font-weight: 700;
+    flex: 0 0 40%;
+  }
+  .second-bar {	
+	background: rgb(204, 204, 204);
+	padding: 1.5rem 4rem 1.5rem 4rem;
+	font-weight: 700;
+	flex: 0 0 60%;
+	
+  }
+}
 
 /*body {
 	

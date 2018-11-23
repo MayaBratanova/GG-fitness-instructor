@@ -5,21 +5,20 @@ body {
 .site {
 }
 
-.site-content {
-  padding: 0 2rem 0 2rem;
-  color: white;
+.site-content {  
+  color: black;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #343336;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23040404' fill-opacity='0.16'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+  /*background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");*/
 
  
   p.picture {
     max-width: 70%;
     height: 35rem;
-	margin-bottom: 1rem;
-	margin: 0 auto;
-	margin-bottom: 2rem;
+	  margin-bottom: 1rem;
+  	margin: 0 auto;
+	  margin-bottom: 2rem;
   }
   a{
 	  font-weight: bold;
@@ -45,12 +44,12 @@ body.промяната-на-мая-бояджиева .site-content,
 body.здравословни-десерти .site-content{
 	padding: 0 5rem 0 5rem;
 }
-body.home .mini-site{
+body.home .mini-site-header{
 	display: none;
 }
-body.как-да-отслабна .mini-site,
-body.промяната-на-мая-бояджиева .mini-site,
-body.здравословни-десерти .mini-site{
+body.как-да-отслабна .mini-site-header,
+body.промяната-на-мая-бояджиева .mini-site-header,
+body.здравословни-десерти .mini-site-header{
   display: none;
 }
 /*body p:first-child {

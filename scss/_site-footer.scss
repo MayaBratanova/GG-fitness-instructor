@@ -1,59 +1,50 @@
-.site-footer{
-    margin-top: auto;
-    background: linear-gradient(rgba(#000, 0.8), rgba(#000, 0.3));
-    color: rgb(0,0,0);
-    font-weight: bold;
-    display: flex;    
-    flex-wrap: wrap;
-    font-family: 'PT Sans', sans-serif;
-    padding: 0.5rem 0 0.5rem 5rem;
-    flex-basis: 100%;
-    justify-content: space-between;
-}
-.site-footer div{
-   padding-right: 1rem;
-}
+.site-footer {
+  margin-top: auto;
+  background: rgb(26, 26, 31);
+  color: rgb(204, 204, 204);
+  font-family: "PT Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5rem 0 3rem;
 
-body > div > footer > div:nth-child(1) > ul{
-    margin: 0;
+  a {
+    text-decoration: none;
+   color: rgb(204, 204, 204);;
+    &:hover {
+      color: green;      
+    }
+  }
+  .links-social li {
+    padding-right: 0.5rem;
+    display: inline;
+    &:hover{
+        animation: shake 0.5s ease-in-out;
+    }
+  }
+  li {
+    list-style: none inside;
+    &:hover{
+        animation: shake 0.5s ease-in-out;
+    }
+    
+  }
+  ul {
     padding: 0;
+  }
+  div {
+    padding: 1rem 0 1rem 2rem;
+  }
+  p {
+    padding-bottom: 1rem;
+  }
+
+  
 }
-.links ul li{
-    list-style: none outside;
-}
-.links-social a,
-.adress a,
-.contacts a,
-.links ul li a{
-    text-decoration: none;    
-    color: rgb(0,0,0);
-    font-weight: bold;
-}
-body > div > footer > div.links > ul > li > a:hover,
-a:hover{
-    color: white;
-}
-.adress span,
-.contacts span{
-    display: block;
-}
-.links-social a{
-    font-size: 16px;
-    padding: 0.3rem;
-}
-.links{
-    flex: 0 0 15%;   
-}
-.contacts{
-    flex: 0 0 20%;
-}
-.adress{
-    flex: 0 1 30%;
+@media screen and (max-width: 860px){
+    .site-footer {
+        grid-template-columns: repeat(2,1fr);
+    }
     
 }
-.links-social{
-    flex: 0 1 20%;    
-}
-.site-footer a:hover{
-    animation: shake 0.5s ease-in-out;
-  }
+
+

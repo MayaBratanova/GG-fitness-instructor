@@ -1,6 +1,6 @@
 nav.main {
   align-self: center;
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(204, 204, 204);
 }
 
 nav.main ul {
@@ -44,10 +44,9 @@ nav.main ul li a {
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
-  text-decoration: none;
-  /*background: #333;*/
+  text-decoration: none;  
   font-weight: bold;
-  color: #fff;
+  color: rgb(204, 204, 204);
 }
 
 nav.main ul li a:hover,
@@ -128,7 +127,7 @@ nav.main ul li:hover > a {
   }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 861px) {
   nav.main ul {
     display: flex;
   }

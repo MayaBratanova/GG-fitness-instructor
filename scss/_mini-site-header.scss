@@ -1,8 +1,16 @@
 .mini-site-header {
   width: 100vw; 
   background-color: #343336;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23040404' fill-opacity='0.16'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");   
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23040404' fill-opacity='0.16'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");   
+	/*&.site-title { 
+		font-size: 4rem;
+		color: rgb(89, 214, 5);
+		padding: 0 2rem;
+		transition: all 0.3s linear;
+		display: inline-block;
+	}*/
 }
+
 body > header:first-of-type {
   border-bottom: 2px solid #000;
   display: flex;
@@ -10,21 +18,14 @@ body > header:first-of-type {
   flex-wrap: wrap;
 }
 
-.mini-site-header .site-title { 
-  font-size: 4rem;
-  color: rgb(89, 214, 5);
-  padding: 0 2rem;
-  transition: all 0.3s linear;
-   display: inline-block;
-}
-header:hover .site-title{	
+header:hover .site-text-logo{	
 	transform: rotate(360deg);	
 }
 .mini-site-header .site-text-logo{
 	font-size: 2.5em;
 	padding-right: 0.2rem;
 }
-.mini-site-header .site-text{
+.mini-site-header .mini-site-text{
 	display: flex;
 	align-items: center;
 	text-align: left;	
@@ -33,8 +34,8 @@ header:hover .site-title{
 	color: rgb(89, 214, 5);
 	font-weight: 500;
 	font-size: 1.5em;	
-	padding: 11rem 3rem 0.5rem 3rem;		
-	float: right;
+	padding: 0rem 0rem 0.5rem 0rem;		
+	
 	
 	p{
 		padding-bottom: 0;
@@ -45,12 +46,7 @@ header:hover .site-title{
 	}
 	
 }
-.mini-site-header:after{
-	display: block;
-	content: '';
-	height: 0;
-	clear: both;
-}
+
 .mini-contacts.first-bar {
     padding: 0;
     margin: 0;
