@@ -104,7 +104,11 @@ header:hover .site-title {
 	
   }
 }
-
+@media screen and (max-width: 860px) {
+  .section-second{
+    display: block;
+  }
+}
 /*body {
 	
 	
