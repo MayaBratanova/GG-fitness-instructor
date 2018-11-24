@@ -21,40 +21,53 @@ body.training-program nav.main ul li a{
 body.services nav.main,
 body.food-program nav.main,
 body.training-program nav.main{
-    z-index: 1000;    
+     
 }
 
 body.training-program .site-content {
-  background: linear-gradient(rgba(#fff, 0.8), rgba(#fff, 0.9)),
+  background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.95)),
     url("../img/fitness.jpg") no-repeat center center;
   background-size: cover;
   color: black !important;
   font-weight: normal;
+  h3,h2{
+    color: rgb(89, 214, 5)
+  }
 }
 body.food-program .site-content {
-  background: linear-gradient(rgba(#fff, 0.8), rgba(#fff, 0.9)),
+  background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.95)),
     url("../img/food.jpg") no-repeat center center;
   background-size: cover;
   color: black !important;
   font-weight: normal;
+  h3, h2{
+    color: rgb(89, 214, 5)
+  }
 }
 body.services .site-content {
-    background: linear-gradient(rgba(#fff, 0.8), rgba(#fff, 0.9)),
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.95)),
       url("../img/services.jpg") no-repeat center center;
     background-size: cover;
     color: black !important;
     font-weight: normal;
+    h3, h2{
+      color: rgb(89, 214, 5)
+    }
+    
 }
+.services-pictures,
 .food-pictures,
 .training-pictures {
+  padding-bottom: 2em;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  
 
   &  p {
-    border-radius: 0.3em;
+    border-radius: 0.3em;    
     padding-bottom: 0;
     display: block;
     position: relative;
@@ -82,10 +95,21 @@ body.services .site-content {
 .food-pictures p:nth-child(1) {
   background: url("../img/food1.jpg") no-repeat center;
   background-size: cover;
+ 
 }
 .food-pictures p:nth-child(2) {
   background: url("../img/food2.jpg") no-repeat center;
   background-size: cover;
+}
+.services-pictures p:nth-child(1){
+  background: url("../img/gena_training_page3.jpg") no-repeat center;
+  background-size: cover;
+ 
+}
+.services-pictures p:nth-child(2){
+  background: url("../img/gena_training_page4.jpg") no-repeat center;
+  background-size: cover;
+ 
 }
 .food .text,
 .training .text {

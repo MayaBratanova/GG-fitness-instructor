@@ -3,9 +3,7 @@
   background: linear-gradient(rgba(#000, 0.2), rgba(#575a5b, 0.2)),
     url("../img/genadi_logo_crop2.jpg") no-repeat center;
   background-size: cover; 
-  a{
-    text-align: center;
-  }
+ 
 }
 .site-header-logo {
   display: flex;
@@ -85,7 +83,7 @@ header:hover .site-title {
   }
   p {
     font-family: PT sans-serif;		
-	padding-bottom: 0.5rem;
+	  padding-bottom: 0.5rem;
   }
   h3{
 	  padding-bottom: 0.5rem;
@@ -94,13 +92,13 @@ header:hover .site-title {
   
   .first-bar {	
 		
-	padding: 1.5rem 4rem 1.5rem 4rem;
-	font-weight: 700;
+	padding: 1.5em 4em 1.5em 4em;
+	  font-weight: 700;
     flex: 0 0 40%;
   }
   .second-bar {	
 	background: rgb(204, 204, 204);
-	padding: 1.5rem 4rem 1.5rem 4rem;
+	padding: 1.5em 4em 1.5em 4em;
 	font-weight: 700;
 	flex: 0 0 60%;
 	
