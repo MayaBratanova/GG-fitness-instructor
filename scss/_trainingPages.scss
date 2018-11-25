@@ -1,0 +1,202 @@
+body.recipes,
+body.services,
+body.training-program,
+body.food-program {
+  .site-header {
+    background: rgb(26, 26, 31);
+    section {
+      display: none;
+    }
+  }
+}
+/*all*/
+.site-content {
+  .pictures {
+    border-radius: 0.3em;
+    padding-bottom: 0;
+    display: block;
+    position: relative;
+    flex: 0 0 40%;
+    height: 20rem;
+    margin: 1rem 0 2rem;
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+/*recipes*/
+.recipes-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  h2, h3{
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  article{
+    margin-bottom: 2rem;
+  }
+}
+
+/*services*/
+.services-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  h2,
+  h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  li {
+    display: block;
+    list-style: none outside;
+    text-align: center;
+  }
+  li:not(:last-child) {
+    padding-right: 1rem;
+  }
+  a {
+    display: block;
+    border: none;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: var(--color-text-second, #fff);
+    background: #333;
+
+    &:hover {
+      color: var(--color-text-second, #fff);
+      background: var(--color-text-theme, rgb(89, 214, 4));
+    }
+  }
+  .text {
+    padding-top: 1rem;
+  }
+}
+
+.services-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 860px) {
+  body.services .services-container ul {
+    display: block;
+    li {
+      padding-right: 0rem !important;
+      padding-bottom: 1rem;
+    }
+  }
+  body.training-program,
+  body.food-program,
+  body.services {
+    article.services .services-articles {
+      display: block;
+    }
+  }
+}
+
+/*pictures*/
+body.services {
+  article.services {
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/services.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(1) > p.services.pictures {
+    background: url("../img/gena_training_page.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(2) > p.services.pictures {
+    background: url("../img/gena_training_page3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(3) > p.services.pictures {
+    background: url("../img/gena_training_page2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(4) > p.services.pictures {
+    background: url("../img/food1.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+body.training-program {
+  article.services {
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/fitness.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(1) > p.services.pictures {
+    background: url("../img/gena_training_page.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(2) > p.services.pictures {
+    background: url("../img/gena_training_page3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(3) > p.services.pictures {
+    background: url("../img/gena_training_page2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(4) > p.services.pictures {
+    background: url("../img/friends.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+body.food-program {
+  article.services {
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/food.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(1) > p.services.pictures {
+    background: url("../img/food1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(2) > p.services.pictures {
+    background: url("../img/food2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(3) > p.services.pictures {
+    background: url("../img/gena_training_page2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  article:nth-child(4) > p.services.pictures {
+    background: url("../img/food1.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+body.recipes {
+  article.recipes {
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/food.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  article:nth-child(1) > p.articles.pictures {
+    background: url("../img/cheese_cake.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(2) > p.articles.pictures {
+    background: url("../img/bananovi_gofreti.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(3) > p.articles.pictures {
+    background: url("../img/cake.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}

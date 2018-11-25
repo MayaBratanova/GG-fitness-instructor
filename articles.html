@@ -1,0 +1,26 @@
+---
+layout: site
+title: Articles
+permalink: /articles/
+---
+<div class="articles-container">
+    <h2>Статии</h2>
+
+    <ul class="listing posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <section class="article-description">
+                    <p class="title">{{ post.title }}</p>
+                    <p class="date">{{ post.description }}</p>
+                </section>
+                <section class="article-text">
+                    <p>{{ post.excerpt }}</p>
+                </section>
+
+
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
