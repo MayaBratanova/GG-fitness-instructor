@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif+Caption:400i|PT+Serif:400,400i,700,700i');
 html {
-	font: var(--font-size-initial, 12px)/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol","PT Sans", "PT Serif Caption", "PT Serif";
+	font: var(--font-size-initial, 12px)/1.5 "PT Sans", "PT Serif Caption", "PT Serif";
+	/*-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",*/
 }
 
 @media screen and (min-width: 500px) {
@@ -44,9 +45,11 @@ li {
 	list-style-position: inside;
 }
 blockquote {
+	width: 80%;
+	margin: 0 auto;
 	border-left: 4px solid #DDD;
 	font-style: italic;
-	margin: 0 0 1.5rem 2rem;
+	
 	padding: 1rem 2rem;
 	position: relative;
 }

@@ -2,16 +2,21 @@
 @import 'variables';
 @import 'reset';
 @import 'typography';
+@import 'buttons';
+@import 'tables';
 
 @import 'animation';
 
-@import 'trainingProgram';
+@import 'navigation';
+@import 'site-header';
+@import 'site-footer';
+@import 'introduction';
+
+
+@import 'trainingPages';
 @import 'layout';
 @import 'contacts';
-@import 'site-header';
-@import 'mini-site-header';
-@import 'navigation';
-@import 'site-footer';
+
 @import 'listing';
 @import 'forms';
 

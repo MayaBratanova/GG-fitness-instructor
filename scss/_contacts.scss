@@ -1,4 +1,4 @@
-.contacts.first-bar {
+.contacts{
     padding: 0;
     margin: 0;
   ul {
@@ -15,7 +15,7 @@
       }
       a{
         text-decoration: none;
-        color: rgb(204, 204, 204);
+        color: var(--color-text-second, #fff);
         margin: 0.5rem;
         font-weight: 500;        
       }

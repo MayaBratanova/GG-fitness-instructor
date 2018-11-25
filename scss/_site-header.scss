@@ -1,11 +1,60 @@
 .site-header {
-  width: 100vw;
+  max-width: 100vw;
   background: linear-gradient(rgba(#000, 0.2), rgba(#575a5b, 0.2)),
     url("../img/genadi_logo_crop2.jpg") no-repeat center;
-  background-size: cover; 
- 
+  background-size: cover;  
+  color: var(--color-text-second, #fff);
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-branding {
+    display: flex;
+    font-size: 1rem;
+    color: var(--color-text-theme, rgb(89, 214, 5));
+    font-weight: bold;
+    
+    align-items: center;
+    p {
+      padding: 0;
+    }
+    .site-branding-logo-icon a {
+      font-size: 3rem;
+      padding: 0 0.5rem;
+      display: inline-block;
+      color: var(--color-text-theme, rgb(89, 214, 5));
+    }
+  }
+  .site-header-text {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--color-text-theme, rgb(89, 214, 5));
+    span {
+      color: var(--color-text-second, #fff);
+    }
+  }
+  section {
+    text-align: center;
+    padding: 8rem 0;
+  }
 }
-.site-header-logo {
+body > header:first-of-type {
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 860px) {
+  .site-header section {
+    padding: 3rem 0;
+  }
+}
+
+
+/*.site-header-logo {
   display: flex;
   font-size: 2em;
   color: rgb(89, 214, 5);
@@ -20,22 +69,10 @@
     display: inline-block;
   }
 }
-/*header{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-}*/
-body > header:first-of-type {
-  border-bottom: 2px solid #000;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-header:hover .site-title {
-  transform: rotate(360deg);
-}
+
+
+
 .site-text-logo {
   font-size: 2.5em;
   padding-right: 0.2rem;
@@ -56,13 +93,7 @@ header:hover .site-title {
   p {
     padding-bottom: 0;
   }
-  p:nth-child(2) {
-    font-size: 0.7em;
-    font-style: italic;
-  }
-  span {
-    color: rgb(204, 204, 204);
-  }
+  
 }
 .site-header:after {
   display: block;
@@ -72,79 +103,4 @@ header:hover .site-title {
 }
 
 
-.section-second {
-  display: flex;
-  align-items: center;  
-  font-family: "PT sans", sans-serif;
-  font-size: 1em;
-  background: #59D605;
-  i{
-	  color: #59D605;
-  }
-  p {
-    font-family: PT sans-serif;		
-	  padding-bottom: 0.5rem;
-  }
-  h3{
-	  padding-bottom: 0.5rem;
-	  font-style: italic;
-  }
-  
-  .first-bar {	
-		
-	padding: 1.5em 4em 1.5em 4em;
-	  font-weight: 700;
-    flex: 0 0 40%;
-  }
-  .second-bar {	
-	background: rgb(204, 204, 204);
-	padding: 1.5em 4em 1.5em 4em;
-	font-weight: 700;
-	flex: 0 0 60%;
-	
-  }
-}
-@media screen and (max-width: 860px) {
-  .section-second{
-    display: block;
-  }
-}
-/*body {
-	
-	
-}
-
-.site-header {
-}
-
-.site-branding {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: fixed;
-	top: 0; left: 0;
-	width: 100%;
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%); 
-	padding: var(--spacing-site);
-	padding-bottom: 4rem;
-}
-
-.site-title {
-	font-size: 1.8em;
-	/*font-weight: bold;*/
-/*text-transform: uppercase;*/
-/*	padding-bottom: 0.5rem;
-	margin-bottom: 0.5rem;
-	border-bottom: 2px solid #DDD;
-}
-
-.site-title a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.site-description {
-	font-style: italic;
-	font-family: serif;
-	font-size: 110%;
-}*/
+*/
