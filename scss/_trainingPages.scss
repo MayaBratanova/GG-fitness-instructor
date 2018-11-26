@@ -1,3 +1,4 @@
+body.about,
 body.recipes,
 body.services,
 body.training-program,
@@ -31,17 +32,94 @@ body.food-program {
   }
 }
 
+/*about*/
+.site-content .about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  h2,
+  h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  section.about-short-info > article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .pictures {
+    margin: 0;
+    width: auto;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .about-short-info .text {
+    padding: 1rem;
+  }
+  .about-description .intro {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .about-differences .about .pictures {
+    height: 30rem;
+  }
+}
+
 /*recipes*/
 .recipes-container {
   width: 80%;
   margin: 0 auto;
   padding: 2rem 0;
-  h2, h3{
+  h2 {
     text-align: center;
     padding-bottom: 2rem;
   }
-  article{
+  article {
     margin-bottom: 2rem;
+  }
+  .articles-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background: white;
+  }
+  .pictures {
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .articles-description {
+    padding: 0.5rem 2rem 0 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    li {
+      list-style: none outside;
+    }
+    h3,
+    h6 {
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: 0.01rem;
+    }
+    h3 {
+      padding-bottom: 0.7rem;
+      font-size: 3em;
+    }
+    h6 {
+      font-size: 1.2em;
+      padding-bottom: 0.2em;
+    }
+    hr {
+      width: 45%;
+      margin-bottom: 0.2rem;
+    }
   }
 }
 
@@ -106,6 +184,28 @@ body.food-program {
   body.services {
     article.services .services-articles {
       display: block;
+    }
+  }
+  body.recipes .articles-text {
+    grid-template-columns: repeat(1, 1fr);
+    .pictures {
+      height: 30rem;
+    }
+  }
+
+  body.about {
+    .site-content .about section.about-short-info>article{
+      grid-template-columns: repeat(1, 1fr);
+      .pictures {
+        height: 25rem;
+      }
+    }
+    .services-container ul {
+      display: block !important;
+      li {
+        margin-bottom: 1rem;
+        padding: 0;
+      }
     }
   }
 }
@@ -186,17 +286,31 @@ body.recipes {
       url("../img/food.jpg") no-repeat center center;
     background-size: cover;
   }
-
-  article:nth-child(1) > p.articles.pictures {
+  article:nth-child(1) > div > p {
     background: url("../img/cheese_cake.jpg") no-repeat center center;
     background-size: cover;
   }
-  article:nth-child(2) > p.articles.pictures {
+  article:nth-child(2) > div > p {
     background: url("../img/bananovi_gofreti.jpg") no-repeat center center;
     background-size: cover;
   }
-  article:nth-child(3) > p.articles.pictures {
+  article:nth-child(3) > div > p {
     background: url("../img/cake.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  article:nth-child(4) > div > p {
+    background: url("../img/cocoski.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+body.about {
+  section.about-short-info > article > .about.pictures {
+    background: url("../img/gena_training_page2.jpg") no-repeat center center;
+    background-size: cover;
+    height: auto;
+  }
+  section.about-differences > .about.pictures {
+    background: url("../img/gena_training_page3.jpg") no-repeat center center;
     background-size: cover;
   }
 }
