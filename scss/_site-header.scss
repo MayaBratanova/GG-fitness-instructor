@@ -4,16 +4,7 @@
     url("../img/genadi_logo_crop2.jpg") no-repeat center;
   background-size: cover;  
   color: var(--color-text-second, #fff);
-  position: relative;
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  
   .contacts {
     display: flex;
     flex-wrap: wrap;

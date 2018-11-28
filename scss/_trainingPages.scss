@@ -1,3 +1,6 @@
+body.contacts,
+body.gallery,
+body.clients,
 body.agenda,
 body.about,
 body.recipes,
@@ -19,8 +22,206 @@ body.food-program {
     display: block;
     position: relative;
     flex: 0 0 40%;
-    height: 20rem;
+    padding-top: 60%;
     margin: 1rem 0 2rem;
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;      
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .media {     
+    position: relative;
+    overflow: hidden;      
+    &:after {
+      display: block;
+      content: "";
+      padding-top: 100%;
+    }
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+    }
+  }
+}
+/*contacts*/
+.contacts-container{
+  
+  .site-contacts{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }  
+  .main-button{
+    border: 0;
+    border-radius: .4rem;
+    text-decoration: none;
+    color: var(--color-text-second, #fff);
+    background: #333;
+    &:hover{
+      border-color: transparent;
+      background: var(--color-text-theme, rgb(89, 214, 5));
+    }
+  }
+  h2{
+    text-align: center;
+  }
+  .address {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  form {
+    max-width: 70%;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 2rem;      
+    input, textarea {
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      box-shadow: 0 1px 1px rgba(black, 0.8);
+  
+      &:focus {
+        border: var(--color-text-theme, rgb(89, 214, 5)) 1px solid;
+        box-shadow: 0 0 4px black;
+      }
+    }
+  
+  }
+  
+  .contact-form{     
+    input, textarea {
+      padding: 1.2rem;
+      display: block;
+      width: 100%;
+      margin-top: 1em;
+      resize: none;
+    }  
+    textarea {
+      height: 13rem;
+    }  
+    .contact-box{
+      display: flex;
+    }
+    .half {      
+      flex: 0 0 50%;
+      margin-bottom: 1em;      
+    }  
+    .right { 
+     flex: 0 0 50%;
+    }  
+    .left {
+      margin-right: 2%;
+    }
+  }
+}
+
+
+/*gallery*/
+.gallery {
+  
+  .gallery-body {
+   
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row dense;
+    gap: 1rem;
+    
+    h2 {
+      padding-bottom: 2rem;
+      grid-column: 1/-1;
+      text-align: center;
+    }
+    .media {     
+      position: relative;
+      overflow: hidden;      
+      &:after {
+        display: block;
+        content: "";
+        padding-top: 100%;
+      }
+      img {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+      }
+    }
+    .media:nth-child(even) {
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+  }
+}
+
+/*clients*/
+.clients-body {
+  ul {
+    padding-left: 0;
+  }
+  .tt_quote_transparency {
+    opacity: 0.2;
+  }
+  .clients-name {
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0;
+  }
+  .media{
+    position: relative;
+    &:after{
+      display: block;
+      content: '';
+      padding-top: 60%;
+    }
+  }
+  .clients-articles {   
+    display: grid;
+    padding-bottom: 2rem;
+    grid-template-columns: repeat(1, 0.5fr 2fr);
+    gap: 1rem;
+    div.title > p:nth-child(2) {
+      text-align: center;
+    }
+  }
+  .title {
+    position: relative;
+  }
+  img{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+
+  }
+  .pictures-circle {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 67px;
+    padding: 0;
+    margin: 1rem auto;
     &:before {
       display: block;
       content: "";
@@ -65,7 +266,6 @@ body.food-program {
     font-weight: bold;
     font-size: 1.2rem;
   }
-  
 }
 
 /*recipes*/
@@ -172,6 +372,26 @@ body.food-program {
 }
 
 @media screen and (max-width: 860px) {
+  .contacts-container{
+    .contact-box{
+      display: block !important;
+    }
+    form.contact-form {
+      padding: 0;
+  
+      input,textarea {
+        margin: 0.5rem auto;
+      }
+      
+    }
+  }
+ 
+  body.gallery .gallery-body{
+    grid-template-columns: repeat(2,1fr);
+  }
+  body.clients .clients-articles {
+    display: block;
+  }
   body.services .services-container ul {
     display: block;
     li {
@@ -194,7 +414,7 @@ body.food-program {
   }
 
   body.about {
-    .site-content .about section.about-short-info>article{
+    .site-content .about section.about-short-info > article {
       grid-template-columns: repeat(1, 1fr);
       .pictures {
         height: 25rem;
@@ -211,7 +431,23 @@ body.food-program {
 }
 
 /*pictures*/
-body.services {
+
+  .contacts-container{
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.9)),
+    url("../img/services.jpg") no-repeat center center;
+  background-size: cover;
+  }
+
+body.gallery{
+  .gallery-container{
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/services.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+
+body.services {  
   article.services {
     background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
       url("../img/services.jpg") no-repeat center center;
@@ -286,22 +522,7 @@ body.recipes {
       url("../img/food.jpg") no-repeat center center;
     background-size: cover;
   }
-  article:nth-child(1) > div > p {
-    background: url("../img/cheese_cake.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  article:nth-child(2) > div > p {
-    background: url("../img/bananovi_gofreti.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  article:nth-child(3) > div > p {
-    background: url("../img/cake.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  article:nth-child(4) > div > p {
-    background: url("../img/cocoski.jpg") no-repeat center center;
-    background-size: cover;
-  }
+  
 }
 body.about {
   article.about {
@@ -317,5 +538,22 @@ body.about {
   section.about-description > .about.pictures {
     background: url("../img/gena_transformation.jpg") no-repeat center center;
     background-size: cover;
+  }
+}
+body.clients {
+  .clients-body {
+    background: linear-gradient(rgba(#fff, 0.95), rgba(#fff, 0.8)),
+      url("../img/services.jpg") no-repeat center center;
+    background-size: cover;
+
+    div:nth-child(3) > div.title > p.pictures-circle {
+      background: url("../img/women_trans.jpg") no-repeat center;
+      background-size: cover;
+    }
+    div:nth-child(4) > div.title > p.pictures-circle {
+      background: url("../img/maya_circle.jpg") no-repeat center;
+      background-size: cover;
+    }
+    
   }
 }
